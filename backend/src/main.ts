@@ -50,3 +50,4 @@ async function bootstrap() {
 }
 
 bootstrap();
+// Trigger redeployment on Railway with all files included
