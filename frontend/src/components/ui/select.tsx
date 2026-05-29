@@ -13,12 +13,11 @@ export type SelectProps = React.SelectHTMLAttributes<HTMLSelectElement>;
 // value starts undefined before the data loads.
 const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
   ({ className, children, value, onChange, ...props }, ref) => {
-    const safeValue = onChange != null && value === undefined ? '' : value;
     return (
       <div className="relative">
         <select
           ref={ref}
-          value={safeValue as any}
+          value={value}
           onChange={onChange}
           className={cn(
             'flex h-9 w-full appearance-none rounded-md border border-input bg-card px-3 py-1 pr-8 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50',
