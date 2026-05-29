@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+
+# Environment / secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Prisma generated client (can be regenerated)
+# backend/node_modules kept excluded above
+
+# Uploads (user-generated content)
+backend/uploads/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# TypeScript incremental build
+*.tsbuildinfo
