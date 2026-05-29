@@ -20,3 +20,4 @@ export default function Home() {
     </div>
   );
 }
+// Trigger rebuild with updated Vercel environment variables
